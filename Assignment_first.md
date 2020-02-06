@@ -22,5 +22,6 @@ class Test { <br/>
             total = total + i; <br/>
          System.out.println("The sum is:" + total); <br/>
     } <br/>
-    
-} 
+  }
+  
+  
