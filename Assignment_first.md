@@ -37,6 +37,14 @@ interface A{ <br/>
 interface B extends A {<br/>
   void method3();<br/>
 }<br/>
+
+
+## Difficult Questions : 
+
+1. Multiple try clauses is not possible. Why? <br/>
+<br/>
+2. Discuss about the Java Buzzwords.
+
 ## Nested Interfaces
 An interface can be declared a member of a class or another interface. Such an interface is called a ""member interface"" or ""nested interface"".A nested interface can be declared as
 public, private or protected. This differs from a top-level interface, which must either be declared as public or use the default access level, as previously described. When a nested 
