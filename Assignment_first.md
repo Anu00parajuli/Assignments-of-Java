@@ -26,8 +26,8 @@ class Test { <br/>
   
   
 
-##Inheritance in interface
-One interface can inherit another by use of the keyword """extends""" . The synatx is the same as for inheriting classes. When a class implements an interface that inherits another
+## Inheritance in interface
+One interface can inherit another by use of the keyword **extends** . The synatx is the same as for inheriting classes. When a class implements an interface that inherits another
 interface,it must provide implementations for all methods required by the interface inheritance chain. Following is an example : <br/>
 <br/>
 interface A{ <br/>
