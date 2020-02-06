@@ -10,17 +10,17 @@ new int[] { 1, 2, 3, 4};  //int type anonymous array
 
 An example to illustrate the concept of anonymous array is given below :
 
-class Test { 
-    public static void main(String[] args) 
-    { 
-          // anonymous array 
-          sum(new int[]{ 1, 2, 3 }); 
-    } 
-    public static void sum(int[] a) 
-    { 
-        int total = 0; 
-          for (int i : a) { 
-            total = total + i; 
-         System.out.println("The sum is:" + total); 
-    } 
+class Test { <br/>
+    public static void main(String[] args) <br/>
+    { </br>
+        sum(new int[]{ 1, 2, 3 });  //anonymous array
+    } </br>
+    public static void sum(int[] a) <br/>
+    { <br/>
+        int total = 0; <br/>
+          for (int i : a) { <br/>
+            total = total + i; <br/>
+         System.out.println("The sum is:" + total); <br/>
+    } <br/>
+    
 } 
