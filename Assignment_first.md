@@ -25,3 +25,36 @@ class Test { <br/>
   }
   
   
+
+##Inheritance in interface
+One interface can inherit another by use of the keyword """extends""" . The synatx is the same as for inheriting classes. When a class implements an interface that inherits another
+interface,it must provide implementations for all methods required by the interface inheritance chain. Following is an example : <br/>
+<br/>
+interface A{ <br/>
+  void method1();<br/>
+  void method2();<br/>
+}<br/>
+interface B extends A {<br/>
+  void method3();<br/>
+}<br/>
+class MyClass implements B{ <br/>
+   public void method1(){<br/>
+    System.out.println("Implement method1");<br/>
+}<br/>
+public void method2(){<br/>
+    System.out.println("Implement method2");<br/>
+}<br/>
+public void method3(){<br/>
+    System.out.println("Implement method3");<br/>
+ }<br/>
+}<br/>
+
+class IFExtend{<br/>
+public static void main (String args[]){<br/>
+   MyClass object = new MyClass();<br/>
+    object.method1();<br/>
+    object.method2();<br/>
+    object.method3();<br/>
+ }<br/>
+}<br/>
+
