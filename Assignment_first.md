@@ -37,6 +37,37 @@ interface A{ <br/>
 interface B extends A {<br/>
   void method3();<br/>
 }<br/>
+## Nested Interfaces
+An interface can be declared a member of a class or another interface. Such an interface is called a ""member interface"" or ""nested interface"".A nested interface can be declared as
+public, private or protected. This differs from a top-level interface, which must either be declared as public or use the default access level, as previously described. When a nested 
+interface is used outside of its enclosing scope, it must be qualified by the name of the class or interface of which it is a member. Thus, outside of the class or interface in which a
+nested interface is declared, its name must be fully qualified.<br/>
+Here is an example that demonstrates a nested interface : <br/>
+class A { <br/>
+   public interface NestedIF{ <br/>
+boolean isNotNegative(int x); <br/>
+}<br/>
+}<br/>
+class B implements A.NestedIF{
+ public boolean isNotNegative(int x){ <br/>
+   return x < 0 ? false : true; <br/>
+} <br/>
+}<br/>
+class NestedIFDemo { <br/>
+  public static void main (String args[]) { <br/>
+     A.NestedIF nif = new B(); <br/>
+     if(nif.isNotNegative(10))<br/>
+        System.out.println("10 is not negative");<br/>
+     if(nif.isNotNegative(-12))<br/>
+        System.out.println("this wont be displayed");<br/>
+ }<br/>
+}<br/>
+      
+       
+
+
+
+
 
 ## Default method in Interface 
 The release of JDK8 has changed this by adding a new capability to interface called the **default method**. A primary motivation for the default method was to provide 
