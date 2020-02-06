@@ -37,6 +37,19 @@ interface A{ <br/>
 interface B extends A {<br/>
   void method3();<br/>
 }<br/>
+
+## Default method in Interface 
+The release of JDK8 has changed this by adding a new capability to interface called the **default method**. A primary motivation for the default method was to provide 
+a means by which interfaces could be expanded without breaking existing code. It provides the flexibility to allow interface to define implementation which will use as 
+the default in a situation where a concrete class fails.Default methods can be provided to an interface without affecting implementing classes as it includes an implementation. 
+If each added method in an interface is defined with implementation, then no implementing class is affected. An implementing class can override the default implementation provided 
+by the interface.For example : <br/>
+public interface oldInterface { <br/>
+    public void existingMethod(); <br/>
+        default public void newDefaultMethod() { <br/>
+        System.out.println("New default method is added in interface"); <br/>
+    } <br/>
+}<br/>
 class MyClass implements B{ <br/>
    public void method1(){<br/>
     System.out.println("Implement method1");<br/>
