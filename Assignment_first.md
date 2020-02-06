@@ -69,32 +69,31 @@ Java provides us facility to create our own exceptions which are basically deriv
 
 We pass the string to the constructor of the super class- Exception which is obtained using “getMessage()” function on the object created.<br/>
 
-// A Class that represents use-defined expception <br/>
+<!-- A Class that represents use-defined expception -->
 class MyException extends Exception <br/>
 { <br/>
     public MyException(String s) <br/>
     { <br/>
-        // Call constructor of parent Exception <br/>
+        <!-- Call constructor of parent Exception --> <br/> 
         super(s); <br/>
     } <br/>
 } <br/>
   
-// A Class that uses above MyException <br/>
+<!-- A Class that uses above MyException --><br/>
 public class Main <br/>
 { <br/>
-    // Driver Program <br/>
+    <!-- Driver Program --> <br/>
     public static void main(String args[]) <br/>
     { <br/>
         try<br/>
         { <br/>
-            // Throw an object of user defined exception <br/>
+            <!-- Throw an object of user defined exception --> <br/>
             throw new MyException("GeeksGeeks"); <br/>
         } <br/>
         catch (MyException ex) <br/>
         { <br/>
             System.out.println("Caught"); <br/>
-  
-            // Print the message from MyException object <br/>
+              <!--Print the message from MyException object --><br/>
             System.out.println(ex.getMessage()); <br/>
         } <br/>
     } <br/>
