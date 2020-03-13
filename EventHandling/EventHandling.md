@@ -16,15 +16,15 @@ The adapter classes are found in java.awt.event, java.awt.dnd and javax.swing.ev
 
 java.awt.event Adapter Classes
 
-Adapter class	Listener interface
-WindowAdapter	WindowListener
-KeyAdapter	KeyListener
-MouseAdapter	MouseListener
-MouseMotionAdapter	MouseMotionListener
-FocusAdapter	FocusListener
-ContainerAdapter	ContainerListener
-HierarchyBoundsAdapter	HierarchyBoundsListener
-java.awt.dnd Adapter classes
+Adapter class	            Listener interface
+WindowAdapter =>	        WindowListener
+KeyAdapter	              KeyListener
+MouseAdapter	            MouseListener
+MouseMotionAdapter	      MouseMotionListener
+FocusAdapter	            FocusListener
+ContainerAdapter	        ContainerListener
+HierarchyBoundsAdapter	  HierarchyBoundsListener
+java.awt.dnd               Adapter classes
 
 Adapter class	Listener interface
 DragSourceAdapter	DragSourceListener
